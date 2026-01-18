@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Products</title>
+</head>
+<body>
+
+<div class="product">
+  <img src="2.png" width="150"><br>
+  <button onclick="orderProduct('Rad Page','2.png')">Order Now</button>
+</div>
+
+<div class="product">
+  <img src="Blue Aesthetic Mood Board Brand Inspiration Poster (3).png" width="150"><br>
+  <button onclick="orderProduct('Blue Poster','Blue Aesthetic Mood Board Brand Inspiration Poster (3).png')">
+    Order Now
+  </button>
+</div>
+
+<div class="product">
+  <img src="Blue Aesthetic Mood Board Brand Inspiration Poster (4).png" width="150"><br>
+  <button onclick="orderProduct('Blue Poster 4','Blue Aesthetic Mood Board Brand Inspiration Poster (4).png')">
+    Order Now
+  </button>
+</div>
+
+<script>
+function orderProduct(name, image) {
+  window.location.href =
+    "order.html?name=" + encodeURIComponent(name) +
+    "&image=" + encodeURIComponent(image);
+}
+</script>
+
+</body>
+</html>
